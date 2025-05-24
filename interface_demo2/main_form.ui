@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainForm</class>
+ <widget class="QWidget" name="MainForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1388</width>
+    <height>782</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1388</width>
+    <height>782</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1388</width>
+    <height>782</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Система учета продукции</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../Downloads/director.qrc">
+    <normaloff>:/images/logo.jfif</normaloff>:/images/logo.jfif</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 10pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>10</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Система учета мебельной продукции</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>1361</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Продукция</string>
+    </attribute>
+    <widget class="QComboBox" name="models_cb">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(103, 186, 128);
+color: rgb(255, 255, 255);
+</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="products_lw">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>1301</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(244, 232, 211);
+color: rgb(0, 0, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addPr_btn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>630</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(103, 186, 128);
+color: rgb(255, 255, 255);
+
+</string>
+     </property>
+     <property name="text">
+      <string>Добавить продукцию</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="type_pr_cb">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>20</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(103, 186, 128);
+color: rgb(255, 255, 255);
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="next_page_btn">
+     <property name="geometry">
+      <rect>
+       <x>1190</x>
+       <y>640</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(103, 186, 128);
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string>Следующая стр</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Цеха</string>
+    </attribute>
+    <widget class="QComboBox" name="products_cb">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>341</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(103, 186, 128);
+color: rgb(255, 255, 255);
+</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="workshops_lw">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>1331</width>
+       <height>591</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(244, 232, 211);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back_btn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>660</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(103, 186, 128);
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string>Назад</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="procedure_btn">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>660</y>
+       <width>241</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(103, 186, 128);
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string>Рассчитать расходы сырья</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="exit_btn">
+   <property name="geometry">
+    <rect>
+     <x>1290</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Выйти</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../Downloads/director.qrc"/>
+ </resources>
+ <connections/>
+</ui>

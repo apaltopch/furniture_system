@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditForm</class>
+ <widget class="QWidget" name="EditForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>511</width>
+    <height>697</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>511</width>
+    <height>697</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>511</width>
+    <height>697</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Редактирование</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../Downloads/director.qrc">
+    <normaloff>:/images/logo.jfif</normaloff>:/images/logo.jfif</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 9pt &quot;Segoe UI&quot;;
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Редактировать</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>481</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="namePr_line">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(244, 232, 211);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="placeholderText">
+       <string>Введите название мебели</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="partn_price_line">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(244, 232, 211);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="placeholderText">
+       <string>Минимальная цена для партнера</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="article_line">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(244, 232, 211);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="placeholderText">
+       <string>Артикул</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="descr_line">
+      <property name="placeholderText">
+       <string>Введите описание мебели</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="material_cb">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(244, 232, 211);
+color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="model_cb">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(244, 232, 211);
+color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="typePr_cb">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(244, 232, 211);
+color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>650</y>
+     <width>401</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="edit_btn">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(103, 186, 128);
+color: rgb(255, 255, 255);
+
+</string>
+      </property>
+      <property name="text">
+       <string>Отредактировать</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="delete_btn">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(103, 186, 128);
+color: rgb(255, 255, 255);
+
+</string>
+      </property>
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="back_btn">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(103, 186, 128);
+color: rgb(255, 255, 255);
+
+</string>
+      </property>
+      <property name="text">
+       <string>Назад</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../Downloads/director.qrc"/>
+ </resources>
+ <connections/>
+</ui>
